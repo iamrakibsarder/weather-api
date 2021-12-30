@@ -2,7 +2,7 @@ const submitButton = document.getElementById('submit-value').addEventListener('c
     const inputValue = document.getElementById('input-value').value;
     
     
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q= + ${inputValue} + &appid=0b07ada3b9c5091361de54b52949e0a8`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q= + ${inputValue} + &appid=0b07ada3b9c5091361de54b52949e0a8`)
     .then(res => res.json())
     .then(data => {
         document.getElementById('city-name').innerText = data.name;
